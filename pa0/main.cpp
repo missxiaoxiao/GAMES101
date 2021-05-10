@@ -18,7 +18,7 @@ int main() {
 	tranMat << 1, 0, 1,
 		0, 1, 2,
 		0, 0, 1;
-	Vector3f p1 = rotMat * p;
+	Vector3f p1 = tranMat*rotMat * p;
 
 	std::cout << "before  : \n";
 	std::cout << p << std::endl;
